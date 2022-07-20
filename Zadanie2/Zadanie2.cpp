@@ -50,11 +50,15 @@ template<typename T>
 T max(T* data, const unsigned int size)
 {
     T tempMax = data[0];
-    for (int i = 1; i < size; ++i)
+    for (unsigned int i = 1; i < size; ++i)
     {
-
+        if (data[i] > mx)
+        {
+            mex = data[i];
+        }
     }
 
+    return max;
 }
 
 
@@ -75,3 +79,6 @@ int main()
     const unsigned int size = 10;
     int arr[size] = { 2,5,67,44,2222,90,6,34,23,1};
     std::cout << "The maximum value in the array: " << max(arr, size) << std::endl;
+
+
+

@@ -1,7 +1,8 @@
 #include <iostream>
 
 
-template <typename T> class StaticTable
+template <typename T>
+class StaticTable
 {
 private:
     T* ptr;
